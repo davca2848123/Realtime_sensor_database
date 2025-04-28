@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senzory</title>
+  
+  <!-- Přidání Roboto fontu -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+        background: #F4F4FA;
+        margin: 0;
+        color: black;
+        text-align: center;
+    }
+  
+    h1, p, h2 {
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .senzory {
+      border-radius: 30px;
+      margin: 25px auto;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      background-color: rgba(243, 243, 244, 0.4);
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+      transition: all 0.3s ease;
+    }
+  
+    .container-hodnot {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .hodnota {
+      flex: 1 1 100%;
+      margin: 10px;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      padding: 10px;
+      box-shadow: 0 0 5px #21212129;
+      transition: all 0.3s ease;
+    }
+  
+    @media (min-width: 600px) {
+      .hodnota {
+        flex: 1 1 30%;
+      }
+    }
+  
+    .hodnota:hover {
+        background-color: rgba(243, 243, 244, 0.2);
+        transform: scale(1.02);
+
+    }
+  
+    .senzory:hover {
+        transform: scale(1.015);
+        box-shadow: 0 0 50px rgba(33, 33, 33, 0.2);
+
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Senzory</h1>
+  <div class="senzory">
+    <h1>BME280</h1>
+    <div class="container-hodnot">
+      <div class="hodnota">
+        <h2>🌡️ Teplota:</h2>
+        <p>bme280_temp_get °C</p>
+      </div>
+      <div class="hodnota">
+        <h2>💧 Vlhkost:</h2>
+        <p>bme280_pressure_get %</p>
+      </div>
+      <div class="hodnota">
+        <h2>⛰️ Tlak:</h2>
+        <p>bme280_humidity_get hPa</p>
+      </div>
+    </div>
+  </div>
+  <div class="senzory">
+    <h1>BH1750</h1>
+    <div class="container-hodnot">
+      <div class="hodnota">
+        <h2>☀️ Intenzita:</h2>
+        <p>bh1750_lux_get lx</p>
+      </div>
+    </div>
+  </div>
+  <div class="senzory">
+    <h1>DHT22</h1>
+    <div class="container-hodnot">
+      <div class="hodnota">
+        <h2>🌡️ Teplota:</h2>
+        <p>dht22_temp_get °C</p>
+      </div>
+      <div class="hodnota">
+        <h2>💧 Vlhkost:</h2>
+        <p>dht22_humidity_get %</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
