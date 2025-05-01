@@ -8,7 +8,7 @@ const unsigned long pushInterval = 1000; //aktualizace hodnot každých 10s
 
 #define WIFI_SSID "Jakub"
 #define WIFI_PASSWORD "fdns96deq"
-#define API_KEY "AIzaSyApNau0_yxCJcKexPzC5M8e_TGolCGJf7Y"
+#define API_KEY "xxxxx"
 #define USER_EMAIL "espmesh@gmail.com"
 #define USER_PASSWORD "123456789"
 #define DATABASE_URL "https://esp-mesh-fd66a-default-rtdb.europe-west1.firebasedatabase.app/"
