@@ -110,8 +110,8 @@ void loop()
         
         String message = "{";
         message += "\"bme280_temp_get\":\"" + String(bme280_temp_get) + "\",";
-        message += "\"bme280_humidity_get\":\"" + String(bme280_pressure_get) + "\",";
-        message += "\"bme280_pressure_get\":\"" + String(bme280_humidity_get) + "\",";
+        message += "\"bme280_pressure_get\":\"" + String(bme280_pressure_get) + "\",";
+        message += "\"bme280_humidity_get\":\"" + String(bme280_humidity_get) + "\",";
         message += "\"bh1750_lux_get\":\"" + String(bh1750_lux_get) + "\",";
         message += "\"dht22_temp_get\":\"" + String(dht22_temp_get) + "\",";
         message += "\"dht22_humidity_get\":\"" + String(dht22_humidity_get) + "\"";
