@@ -4,7 +4,7 @@
 #include <Wire.h>
 #include <BH1750.h>
 
-const unsigned long pushInterval = 1000; //aktualizace hodnot každých 10s
+const unsigned long pushInterval = 10000; //aktualizace hodnot každých 10s
 
 #define WIFI_SSID "Jakub"
 #define WIFI_PASSWORD "fdns96deq"
