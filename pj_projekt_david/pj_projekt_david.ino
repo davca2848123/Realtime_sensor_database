@@ -1,6 +1,3 @@
-//v1.2
-// Testovaný funkční kód
-
 #include <Arduino.h>
 #include <FirebaseClient.h>
 #include "ExampleFunctions.h"
