@@ -3,7 +3,7 @@
 #include "ExampleFunctions.h"
 #include <DHT.h>
 
-const unsigned long pushInterval = 1000; //aktualizace hodnot každých 10s
+const unsigned long pushInterval = 10000; //aktualizace hodnot každých 10s
 
 #define WIFI_SSID "Jakub"
 #define WIFI_PASSWORD "Telekom147"
