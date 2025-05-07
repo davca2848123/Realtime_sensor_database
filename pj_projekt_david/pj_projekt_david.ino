@@ -151,7 +151,6 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
   if (type == WStype_TEXT) {
     String msg = String((char*)payload);
     if (msg == "getValues") {
-      // Požadavek na odeslání hodnot, odeslání aktuálních hodnot
       String message = "{";
       message += "\"bme280_temp_get\":\"" + String(bme280_temp_get) + "\",";
       message += "\"bme280_humidity_get\":\"" + String(bme280_pressure_get) + "\",";
